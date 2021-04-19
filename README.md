@@ -1,4 +1,4 @@
-# phedone
+# Phedone
 
 ## Installation
 
@@ -6,15 +6,15 @@ $ pip install -r requirements.txt
 
 ## Project description
 
-Task 1:
+### Task 1:
 
-Step 1: Retrieve data from the positive.review and negative.review files.
+#### Step 1: Retrieve data from the positive.review and negative.review files.
 
 Open the files in ISO-8859-15
 using the Beautifull soup library to parse the data tagged in the files. 
 text recovery in <rating> and <review_text>.
 
-Step 2: preprocessing, 
+#### Step 2: preprocessing, 
 
 removal of tags present in the collected data
 text in lower case to unify the words
@@ -22,9 +22,9 @@ removal of special characters.
 
 Concerning the reviews that have more than one sentence, I made the choice to keep them as is so that LASER embeddings returns only one numerical representation of the review. Another way to study would be to split the reviews sentence by sentence in order to have a unique numerical representation of each sentence and to assign the rating that is associated to the review.
 
-Step 3: Numerical representation of the reviews in (number of sentences*1024) 
+#### Step 3: Numerical representation of the reviews in (number of sentences*1024) 
 
-Step 4: Classification of the reviews according to their numerical representation
+#### Step 4: Classification of the reviews according to their numerical representation
 
 Several approaches have been tested for the classification of the reviews.
 Randome forest : 
@@ -64,7 +64,7 @@ Until now I had a quick overview of tensor flow.
 This exercise allowed me to deepen my understanding of how to use data with TS and also how to design models.
 
 
-Task 2 : Machine translation
+### Task 2 : Machine translation
 
 General idea for the RNN architecture: 
 
@@ -82,6 +82,6 @@ https://github.com/ceshine/LASER/blob/master/notebooks/New%20York%20Times%20Mult
 
 I understand that this is not really an answer in itself, the files in question are not on the github.
 
-Task 3:
+### Task 3:
 Design a dashboard that summarizes the main information of the prediction of Task 1:
 Product list, overall rating, number of reviews, distribution of positive or negative feelings and some random example of review.
